@@ -15,7 +15,7 @@ __________
  \033[1;m
 
 
- \033[1;32m+ -- -- +=[ Author: Paolo Daniele | Homepage: www.paolodaniele.tt\033[1;m
+ \033[1;32m+ -- -- +=[ Author: Paolo Daniele | Homepage: www.paolodaniele.it\033[1;m
 
 		'''
 		def start1():
