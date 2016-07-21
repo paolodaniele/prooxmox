@@ -122,7 +122,6 @@ __________
 							cmd2 = os.system("echo '10.70.1.200  " + name + " pvelocalhost' >> /etc/hosts")
                                                         cmd3 = os.system("apt-get install pve-firmware pve-kernel-2.6.32-26-pve")
 							cmd4 = os.system("apt-get install pve-headers-2.6.32-26-pve")
-							cmd5 = os.system("apt-get install proxmox-ve-2.6.32 ntp ssh lvm2 postfix ksm-control-daemon vzprocps open-iscsi bootlogd")
 						if option1 == "3":
 							cmd6 = os.system("apt-get install proxmox-ve-2.6.32 ntp ssh lvm2 postfix ksm-control-daemon vzprocps open-iscsi bootlogd")
 
