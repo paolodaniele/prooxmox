@@ -115,12 +115,18 @@ __________
 							start1()
 						if option1 == "1":
 							name = socket.gethostname()
-							cmd = os.system("echo '10.70.1.200  " + name + " pvelocalhost' >> /etc/hosts")
+							f = os.popen('ifconfig eth0 | grep "inet\ addr" | cut -d: -f2 | cut -d" " -f1')
+							lan_ip = f.read()
+							cmd = os.system("echo 127.0.0.1	localhost.localdomain localhost ' \n' > /etc/hosts")
+							cmd0 = os.system("echo ' " + lan_ip + "  " + name + " pvelocalhost\n' >> /etc/hosts")
 							cmd1 = os.system("apt-get install proxmox-ve ntp ssh postfix ksm-control-daemon open-iscsi systemd-sysv")	
 						if option1 == "2":
 							name = socket.gethostname()
-							cmd2 = os.system("echo '10.70.1.200  " + name + " pvelocalhost' >> /etc/hosts")
-                                                        cmd3 = os.system("apt-get install pve-firmware pve-kernel-2.6.32-26-pve")
+							f = os.popen('ifconfig eth0 | grep "inet\ addr" | cut -d: -f2 | cut -d" " -f1')
+							lan_ip = f.read()
+							cmd = os.system("echo 127.0.0.1	localhost.localdomain localhost ' \n' > /etc/hosts")
+							cmd0 = os.system("echo ' " + lan_ip + "  " + name + " pvelocalhost\n' >> /etc/hosts")
+							cmd3 = os.system("apt-get install pve-firmware pve-kernel-2.6.32-26-pve")
 							cmd4 = os.system("apt-get install pve-headers-2.6.32-26-pve")
 						if option1 == "3":
 							cmd6 = os.system("apt-get install proxmox-ve-2.6.32 ntp ssh lvm2 postfix ksm-control-daemon vzprocps open-iscsi bootlogd")
