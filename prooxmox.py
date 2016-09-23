@@ -102,7 +102,7 @@ __________
 	2) Install Proxmox on Debian Wheezy part 1
 	3) Install Proxmox on Debian Wheezy part 2 (after reboot)
 
-	This version add a phantom ip address to get proxmox installation valid, when it's over you can change with your real ip address
+
 
 			 '''
 						print "\033[1;32mSelect your distro to begin install Proxmox VE .\033[1;m"
